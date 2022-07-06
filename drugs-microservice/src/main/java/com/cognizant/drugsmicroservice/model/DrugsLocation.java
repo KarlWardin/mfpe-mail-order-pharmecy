@@ -23,8 +23,6 @@ public class DrugsLocation {
     private String serialId;
     private String location;
     private int quantity;
-    @ManyToOne(cascade = { CascadeType.ALL })
-    @JoinColumn(name = "drugId")
-    private Drugs drugs;
+    private String drugId;
 	
 }

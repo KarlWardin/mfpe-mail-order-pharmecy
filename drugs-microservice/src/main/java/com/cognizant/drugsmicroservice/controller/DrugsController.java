@@ -22,9 +22,9 @@ public class DrugsController {
 	@Autowired
 	private DrugsService drugsService;
 
-	@ApiOperation(value = "Get all drugs", response = List.class)
+	@ApiOperation(value = "Get all drugs without Authorization", response = List.class)
 	@GetMapping("/getAllDrugs")
-	public List<Drugs> getAllDrugs(@RequestHeader("Authorization") final String token) {
+	public List<Drugs> getAllDrugs() { // demo check
 		return drugsService.getAllDrugs();
 	}
 

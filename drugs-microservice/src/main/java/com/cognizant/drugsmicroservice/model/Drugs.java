@@ -20,11 +20,8 @@ public class Drugs {
 	private String manufacturer;
 	private Date manufactureDate;
 	private Date expiryDate;
-	@OneToMany(mappedBy = "drugs")
+	@OneToMany(mappedBy = "drugId")
     private List<DrugsLocation> druglocationQuantities;
-	//private String composition;
-	//private int units_per_package;
-	//private double cost_per_package;
 	
 	public Drugs() {
         this.druglocationQuantities = new ArrayList<DrugsLocation>();
