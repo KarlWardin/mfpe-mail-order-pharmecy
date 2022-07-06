@@ -7,6 +7,6 @@ import com.cognizant.drugsmicroservice.model.DrugsLocation;
 
 
 @Repository
-public interface DrugsLocationRepo extends JpaRepository<DrugsLocation, Integer> {
+public interface DrugsLocationRepo extends JpaRepository<DrugsLocation, String> {
 
 }
