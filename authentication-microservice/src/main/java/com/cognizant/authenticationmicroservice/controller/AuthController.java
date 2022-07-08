@@ -39,7 +39,7 @@ public class AuthController {
 	}
 
 	@PostMapping(value = "/login")
-	public ResponseEntity<?> login(@RequestBody JwtRequestModel request) throws Exception {
+	public ResponseEntity<JwtResponseModel> login(@RequestBody JwtRequestModel request) throws Exception {
 		try {
 			authenticationManager.authenticate(
 					new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword()));

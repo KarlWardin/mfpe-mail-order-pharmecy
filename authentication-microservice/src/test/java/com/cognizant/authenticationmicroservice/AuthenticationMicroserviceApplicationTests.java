@@ -1,5 +1,7 @@
 package com.cognizant.authenticationmicroservice;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -7,7 +9,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 class AuthenticationMicroserviceApplicationTests {
 
 	@Test
-	void contextLoads() {
+	 void main() {
+		AuthenticationMicroserviceApplication.main(new String[] {});
+		assertTrue(true);
 	}
 
 }
